@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="net.sparkeek.t2c"
+    package="net.sparkeek.piggybank"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -9,14 +9,14 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
 
     <application
-        android:name="net.sparkeek.t2c.ApplicationAndroidStarter"
+        android:name="net.sparkeek.piggybank.ApplicationAndroidStarter"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="net.sparkeek.t2c.mvp.ActivityMain"
+            android:name="net.sparkeek.piggybank.mvp.ActivityMain"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -26,7 +26,7 @@
         </activity>
 
         <service
-            android:name="net.sparkeek.t2c.services.ServiceQueryExecutor"
+            android:name="net.sparkeek.piggybank.services.ServiceQueryExecutor"
             android:enabled="true"
             android:exported="false"
             />

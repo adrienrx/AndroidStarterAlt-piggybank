@@ -39,13 +39,13 @@ android {
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
 
-    def ENVIRONMENT_CONSTANT_TYPE = "net.sparkeek.t2c.IEnvironment"
-    def ENVIRONMENT_CONSTANT_VALUE_DEV = "net.sparkeek.t2c.Environment.DEV"
-    def ENVIRONMENT_CONSTANT_VALUE_PROD = "net.sparkeek.t2c.Environment.PROD"
+    def ENVIRONMENT_CONSTANT_TYPE = "net.sparkeek.piggybank.IEnvironment"
+    def ENVIRONMENT_CONSTANT_VALUE_DEV = "net.sparkeek.piggybank.Environment.DEV"
+    def ENVIRONMENT_CONSTANT_VALUE_PROD = "net.sparkeek.piggybank.Environment.PROD"
     def ENVIRONMENT_CONSTANT_NAME = "ENVIRONMENT"
 
     defaultConfig {
-        applicationId "net.sparkeek.t2c"
+        applicationId "net.sparkeek.piggybank"
         minSdkVersion 18
         targetSdkVersion 24
         versionCode 1
@@ -53,7 +53,7 @@ android {
         // Enabling multidex support.
         multiDexEnabled true
 
-        testInstrumentationRunner "net.sparkeek.t2c.tests.runner.AndroidStarterTestRunner"
+        testInstrumentationRunner "net.sparkeek.piggybank.tests.runner.AndroidStarterTestRunner"
     }
 
     buildTypes {
